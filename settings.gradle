@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // هذا هو الشكل الصحيح لإضافة JitPack
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Sami Medical"
+include ':app'
